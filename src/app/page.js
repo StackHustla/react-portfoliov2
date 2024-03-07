@@ -12,7 +12,7 @@ export default function Home() {
             <h1 className="text-xl ">devlopedbyed</h1>
             <ul className="flex items-center">
               <li className="cursor-pointer text-2xl "><BsFillMoonStarsFill /></li>
-              <li className=" bg-gradient-to-r from-cyan-500 to-teal-200 ml text-black px-4 py-2 rounded-md ml-8"><a href="#">Resume</a></li>
+              <li className=" bg-gradient-to-r from-cyan-500 to-teal-200 ml text-black px-4 py-2 rounded-md mr-8 ml-8"><a href="#">Resume</a></li>
             </ul>
           </nav>
         </section>
