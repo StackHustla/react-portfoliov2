@@ -35,3 +35,10 @@ body {
   font-family: "burtons";
   src: url("/Users/tonymoore/Desktop/Escape/Github/react-portfoliov2/public/Burtons.otf");
 }
+.custom-button {
+  @apply px-4 py-2 rounded bg-yellow-500 text-white ml-4;
+}
+
+.underline-smooth {
+ @apply relative inline cursor-pointer text-xl font-medium before:bg-violet-600  before:absolute before:-bottom-1 before:block before:h-[2px] before:w-full before:origin-bottom-right before:scale-x-0 before:transition before:duration-300 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100;
+}
