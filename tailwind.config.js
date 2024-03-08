@@ -16,7 +16,12 @@ module.exports = {
         primary: '#FF4500', 
         secondary: '#007BFF', 
         accent: '#6C757D',
-        
+      },
+      fontFamily: {
+        burtons: "burtons",
+      },
+      fontFamily: {
+        cheque: "cheque",
       },
     },
   },

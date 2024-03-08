@@ -1,0 +1,4 @@
+.custom-button {
+    @apply px-4 py-2 rounded bg-yellow-500 text-white ml-4;/* revisit. I want to have a component sheet or something */
+  }
+  

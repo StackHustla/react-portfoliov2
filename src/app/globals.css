@@ -31,20 +31,22 @@ body {
     text-wrap: balance;
   }
 }
+
 @font-face {
   font-family: "burtons";
   src: url("/Users/tonymoore/Desktop/Escape/Github/react-portfoliov2/public/Burtons.otf");
 }
+
+@font-face {
+  font-family: "cheque", 'Times New Roman', Times, serif;
+  src: url("/Users/tonymoore/Desktop/Escape/Github/react-portfoliov2/public/Cheque-Black.otf");
+}
+
+
 .custom-button {
-  @apply px-4 py-2 rounded bg-yellow-500 text-white ml-4;
+  @apply px-4 py-2 rounded bg-yellow-500 text-white ml-4;/* revisit. I want to have a component sheet or something */
 }
 
-.underline-smooth {
- @apply relative inline cursor-pointer text-xl font-medium before:bg-violet-600  before:absolute before:-bottom-0.5 before:block before:h-[2px] before:w-full before:origin-bottom-right before:scale-x-0 before:transition before:duration-300 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100;
-}
-
-/* Gradient Styles test
-======================= */
 .resume-button {
   position: relative;
 }
