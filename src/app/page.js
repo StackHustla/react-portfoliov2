@@ -19,7 +19,7 @@ import { useState } from 'react';
 
 
 export default function Home() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(false); /* reference https://www.youtube.com/watch?v=zFFuV_vXNhY&t=115s */
   return (
     <main className='bg-white px-10  md:px-20 lg:px-40'>
       <div className={darkMode ? 'dark' : ""}>
