@@ -51,9 +51,9 @@ export default function Home() {
 
         {/* Card Section */}
         <section>
-          <div className='lg:flex gap-10' >
-            <h3 className="text-3xl py-1 ">Services I offer</h3>
-            <p className="text-md py-2 leading-8 text-gray-600">
+          <div className='lg:flex lg:flex-col gap-5 mx-auto' >
+            <h3 className="text-3xl pt-7 pb-3 md:text-center lg:text-center max-w-xl mx-auto">Services I offer</h3>
+            <p className="text-md md:text-l pb-4 leading-8 text-gray-600  max-w-xl mx-auto">
               Since the beginning of my journey as a freelance designer and
               developer, I've done remote work for
               <span className="text-teal-500"> agencies </span>
@@ -61,8 +61,7 @@ export default function Home() {
               and collaborated with talanted people to create digital products
               for both business and consumer use.
             </p>
-            <p className="text-md py-2 leading-8 text-gray-600">
-              I offer from a wide range of services, including brand design,
+            <p className="text-md pb-2 md:text-center lg:text-center leading-8 max-w-xl text-gray-600 mx-auto"> I offer from a wide range of services, including brand design,
               programming and teaching.
             </p>
           </div>
@@ -99,6 +98,7 @@ export default function Home() {
             </div>
           </div>
         </section>
+
         {/* footer?? */}
         <section>
           <div>
