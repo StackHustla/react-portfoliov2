@@ -1,3 +1,5 @@
+"use client";
+
 import { BsFillMoonStarsFill } from 'react-icons/bs'
 import { BiAccessibility } from "react-icons/bi";
 import Carousel from "./components/carousel";
@@ -13,13 +15,14 @@ import web3 from '/public/web3.png';
 import web4 from '/public/web4.png';
 import web5 from '/public/web5.png';
 import web6 from '/public/web6.png';
-
+import { useState } from 'react';
 
 
 export default function Home() {
+  const [darkMode, setDarkMode] = useState(false);
   return (
     <main className='bg-white px-10  md:px-20 lg:px-40'>
-      <div>
+      <div className={darkMode ? 'dark' : ""}>
         <section className=" bg-white min-h-screen">
           <nav className="py-10 mb-12 flex justify-between">
             <h1 className="ml-8 text-xl font-burtons uppercase ">CreatedbyTonyT</h1>
