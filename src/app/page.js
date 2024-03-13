@@ -20,24 +20,28 @@ import { useState } from 'react';
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false); /* reference https://www.youtube.com/watch?v=zFFuV_vXNhY&t=115s */
-  
+
   return (
+    <div className={darkMode ? 'dark' : ""}>
+      <head>
+        <title>Tony T Portfolio</title>
+      </head>
     <main className='bg-white px-10 dark:bg-gray-800 md:px-20 lg:px-4'>
-      <div className={darkMode ? 'dark' : ""}>
-        <section className=" bg-white min-h-screen">
+      <div>
+        <section className=" bg-white min-h-screen dark:bg-gray-800">
           <nav className="py-10 mb-12 flex justify-between">
-            <h1 className="ml-8 text-xl font-burtons uppercase ">CreatedbyTonyT</h1>
+            <h1 className="ml-8 text-xl font-burtons uppercase dark:text-white">CreatedbyTonyT</h1>
             <ul className="flex items-center">
-              <li className="cursor-pointer text-2xl  "><BsFillMoonStarsFill
+              <li className="cursor-pointer text-2xl dark:text-white "><BsFillMoonStarsFill
                 onClick={() => setDarkMode(!darkMode)} />
                 </li>
-              <li className=" bg-gradient-to-r from-cyan-500 to-teal-500 ml text-black px-4 py-2 rounded-md mr-8 ml-8"><a href="#">Resume</a></li>
+              <li className=" bg-gradient-to-r from-cyan-500 to-teal-500 ml text-black px-4 py-2 rounded-md mr-8 ml-8 dark:text-white" ><a href="#">Resume</a></li>
             </ul>
           </nav>
           <div className="text-center p-10 ">
             <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl">Tony T</h2>
-            <h3 className="text-2xl py-1 md:text-3xl">Developer and Creator</h3>
-            <p className=" text-md py-5 leading-7 text-gray-600 md:text-xl  max-w-xl mx-auto">
+            <h3 className="text-2xl py-1 md:text-3xl dark:text-white">Front-End Developer and Graphic Designer</h3>
+            <p className=" text-md py-5 leading-7 text-gray-600 md:text-xl  max-w-xl mx-auto dark:text-white">
               Passionate creative with expertise in graphic design transitioning into the realm of
               Software Development. As a recent graduate, I bring a robust background in creative endeavors,
               driven by a fervent interest in front-end development. Eager to channel my creative prowess
@@ -45,12 +49,12 @@ export default function Home() {
               to deliver impactful solutions.
             </p>
           </div>
-          <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600">  {/* hover?? */}
+          <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-white">  {/* hover?? */}
             <AiFillLinkedin />
             <AiFillYoutube />
             <AiFillTwitterCircle />
           </div>
-          <div className="relative mx-auto py-2 bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden border-teal-500 border-8 md:h-96 md:w-96">
+          <div className="relative mx-auto py-2 bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden border-teal-500 border-8 md:h-96 md:w-96 dark:border-white">
             <Image src={sukuna} layout='fill' objectFit='cover' />
           </div>
         </section>
@@ -58,8 +62,8 @@ export default function Home() {
         {/* Card Section */}
         <section>
           <div className='lg:flex lg:flex-col gap-5 mx-auto' >
-            <h3 className="text-3xl pt-7 pb-3 md:text-center lg:text-center max-w-xl mx-auto">Services I offer</h3>
-            <p className="text-md md:text-l pb-4 leading-8 text-gray-600  max-w-xl mx-auto">
+            <h3 className="text-3xl pt-7 pb-3 md:text-center lg:text-center max-w-xl mx-auto dark:text-white">Services I offer</h3>
+            <p className="text-md md:text-l pb-4 leading-8 text-gray-600  max-w-xl mx-auto dark:text-white">
               Since the beginning of my journey as a freelance designer and
               developer, I've done remote work for
               <span className="text-teal-500"> agencies </span>
@@ -67,40 +71,40 @@ export default function Home() {
               and collaborated with talanted people to create digital products
               for both business and consumer use.
             </p>
-            <p className="text-md pb-2 md:text-center lg:text-center leading-8 max-w-xl text-gray-600 mx-auto"> I offer from a wide range of services, including brand design,
+            <p className="text-md pb-2 md:text-center lg:text-center leading-8 max-w-xl text-gray-600 mx-auto dark:text-white"> I offer from a wide range of services, including brand design,
               programming and teaching.
             </p>
           </div>
           <div className='lg:flex gap-10 justify-center'>
-            <div className='text-center  shadow-xl p-10 rounded-xl my-10'>
+            <div className='text-center  shadow-xl p-10 rounded-xl my-10 dark:bg-gray-500 dark:text-white'>
               <Image src={code} width={100} height={100} className='mx-auto' />
               <h3 className='text-lg font-medium pt-8 pb-2'>Beautiful Designs</h3>
               <p className=' py-2'>
                 Creating chaos everywhere I go. Yuji is a hoe.</p>
-              <h4 className='py-4 text-teal-600 uppercase'>Design tools I use</h4>
-              <p className='text-gray-600 py-1'>Photoshop</p>
-              <p className='text-gray-600 py-1'>Illustrator</p>
-              <p className='text-gray-600 py-1'>Figma</p>
+              <h4 className='py-4 text-teal-600 uppercase dark:text-teal-300'>Design tools I use</h4>
+              <p className='text-gray-600 py-1 dark:text-white'>Illustrator</p>
+              <p className='text-gray-600 py-1 dark:text-white' >Photoshop</p>
+              <p className='text-gray-600 py-1 dark:text-white'>Figma</p>
             </div>
-            <div className='text-center shadow-xl p-10 rounded-xl my-10'>
+            <div className='text-center shadow-xl p-10 rounded-xl my-10 dark:bg-gray-500 dark:text-white'>
               <Image src={design} width={100} height={100} className='mx-auto' />
               <h3 className='text-lg font-medium pt-8 pb-2'>Beautiful Designs</h3>
               <p className=' py-2'>
                 Creating chaos everywhere I go. Yuji is a hoe.</p>
-              <h4 className='py-4 text-teal-600 uppercase'>Design tools I use</h4>
-              <p className='text-gray-600 py-1'>Photoshop</p>
-              <p className='text-gray-600 py-1'>Illustrator</p>
-              <p className='text-gray-600 py-1'>Figma</p>
+              <h4 className='py-4 text-teal-600 uppercase dark:text-teal-300'>Design tools I use</h4>
+              <p className='text-gray-600 py-1 dark:text-white'>Photoshop</p>
+              <p className='text-gray-600 py-1 dark:text-white'>Illustrator</p>
+              <p className='text-gray-600 py-1 dark:text-white'>Figma</p>
             </div>
-            <div className='text-center shadow-xl p-10 rounded-xl my-10'>
+            <div className='text-center shadow-xl p-10 rounded-xl my-10 dark:bg-gray-500 dark:text-white'>
               <Image src={consulting} width={100} height={100} className='mx-auto' />
               <h3 className='text-lg font-medium pt-8 pb-2'>Beautiful Designs</h3>
               <p className=' py-2'>
                 Creating chaos everywhere I go. Yuji is a hoe.</p>
-              <h4 className='py-4 text-teal-600 uppercase'>Design tools I use</h4>
-              <p className='text-gray-600 py-1'>Photoshop</p>
-              <p className='text-gray-600 py-1'>Illustrator</p>
-              <p className='text-gray-600 py-1'>Figma</p>
+              <h4 className='py-4 text-teal-600 uppercase dark:text-teal-300'>Design tools I use</h4>
+              <p className='text-gray-600 py-1 dark:text-white'>Photoshop</p>
+              <p className='text-gray-600 py-1 dark:text-white'>Illustrator</p>
+              <p className='text-gray-600 py-1 dark:text-white'>Figma</p>
             </div>
           </div>
         </section>
@@ -108,8 +112,8 @@ export default function Home() {
         {/* footer?? */}
         <section>
           <div>
-            <h3 className='text-3xl py-1'>Portfolio</h3>
-            <p className="text-md py-2 leading-8 text-gray-600">
+            <h3 className='text-3xl py-1 dark:text-white'>Portfolio</h3>
+            <p className="text-md py-2 leading-8 text-gray-600 dark:text-white">
               Since the beginning of my journey as a freelance designer and
               developer, I've done remote work for
               <span className="text-teal-500"> agencies </span>
@@ -141,5 +145,6 @@ export default function Home() {
         </section>
       </div>
     </main>
+    </div>
   );
 }
